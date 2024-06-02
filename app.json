@@ -1,0 +1,28 @@
+{  
+  "pages": [  
+    "pages/index/index",  
+    "pages/newAlbum/newAlbum",  
+    "pages/album/album",  
+    "pages/albumInfo/albumInfo",  
+    "pages/newCard/newCard",  
+    "pages/cardInfo/cardInfo"
+  ],  
+  "window": {  
+    "navigationBarTextStyle": "black",  
+    "navigationStyle": "default",  
+    "navigationBarTitleText": "怡本卡册"  
+  },  
+  "style": "v2",  
+  "renderer": "skyline",  
+  "rendererOptions": {  
+    "skyline": {  
+      "defaultDisplayBlock": true,  
+      "disableABTest": true,  
+      "sdkVersionBegin": "3.0.0",  
+      "sdkVersionEnd": "15.255.255"  
+    }  
+  },  
+  "componentFramework": "glass-easel",  
+  "sitemapLocation": "sitemap.json",  
+  "lazyCodeLoading": "requiredComponents"  
+}
