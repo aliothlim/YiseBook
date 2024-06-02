@@ -1,0 +1,22 @@
+<navigation-bar title="YiseBook" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view type="list" style='height: {{windowHeight}}px' scroll-y="true">
+  <view class="container">
+    <view wx:if="{{cards.length === 0}}" class="no-cards-message">
+      <text class="nothing">还没有小卡，去添加👇</text>
+    </view>
+    <view wx:else class="card-list">
+      <view class="card-row" wx:for="{{cards}}" wx:key="id" wx:for-item="item" wx:for-index="index" wx:if="{{index % 2 === 0}}">
+        <view class="card" data-id="{{item.id}}" bindtap="goTocard">
+          <image src="{{item.image1}}" class="image"></image>
+          <text class="name">{{item.name}}</text>
+        </view>
+        <view wx:if="{{cards[index + 1]}}" class="card" data-id="{{cards[index + 1].id}}" bindtap="goTocard">
+          <image src="{{cards[index + 1].image1}}" class="image"></image>
+          <text class="name">{{cards[index + 1].name}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="fab info" bindtap="goToAlbumInfo">i</view>
+    <view class="fab" bindtap="goToNewcard">+</view>
+  </view>
+</scroll-view>

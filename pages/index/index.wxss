@@ -1,0 +1,64 @@
+.container {
+  padding: 20px 5%;
+  text-align: center;
+  margin-bottom: 25%;
+}
+
+.nothing {
+  font-size: 20px;
+}
+
+.album-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.album {
+  width: 47%;
+  position: relative;
+}
+
+.cover {
+  width: 100%;
+  padding-top: 150%;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cover::before {
+  content: "";
+  display: block;
+  padding-top: 150%; /* 2:3 aspect ratio */
+}
+
+.name {
+  font-size: 18px;
+  font-family: "微软雅黑";
+  padding: 5px;
+}
+
+.fab {
+  position: fixed;  
+  bottom: 30px;  
+  right: 30px;  
+  width: 80px;  
+  height: 80px;  
+  border-radius: 50%;
+  background-color: #C0D825;  
+  color: white;  
+  font-size: 50px;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  text-align: center;  
+  line-height: 80px;
+}

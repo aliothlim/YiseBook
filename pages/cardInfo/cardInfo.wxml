@@ -1,0 +1,25 @@
+<navigation-bar title="YiseBook" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view type="list" style='height: {{windowHeight}}px' scroll-y="true">
+  <view class="container">
+    <view class="card-row">
+        <view class="card">
+          <image src="{{image1}}" class="image" bindtap="selectOpt1"></image>
+        </view>
+        <view class="card">
+          <image src="{{image2}}" class="image" bindtap="selectOpt2"></image>
+        </view>
+      </view>
+      <text>卡名</text><input value="{{name}}" bindinput="inputName"/>
+      <text>来源</text><input value="{{source}}" bindinput="inputSource"/>
+      <text>购入日期</text>
+      <picker mode="date" bindchange="inputPurchaseDate">
+        <input value="{{purchaseDate}}" disabled/>
+      </picker>
+      <text>点数</text><input value="{{points}}" bindinput="inputPoints"/>
+      <text>价格</text><input value="{{price}}" bindinput="inputPrice"/>
+      <text>备注</text>
+      <textarea value="{{remarks}}" bindinput="inputRemarks"></textarea>
+      <button bindtap="updateCard">保存</button>
+      <button class="delete" bindtap="deleteCard">删除</button>
+  </view>
+</scroll-view>

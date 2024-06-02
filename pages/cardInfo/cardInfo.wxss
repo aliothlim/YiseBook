@@ -1,0 +1,63 @@
+.container {
+  padding: 20px;
+  margin-bottom: 25%;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 47%;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  padding-top: 150%;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+  background-color: #ccc;
+}
+
+.image::before {
+  content: "";
+  display: block;
+  padding-top: 150%; /* 2:3 aspect ratio */
+}
+
+text {
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input {
+  padding-top: 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #C0D825;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.delete {
+  background-color: #ff6347;
+}

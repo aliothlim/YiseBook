@@ -1,0 +1,11 @@
+<navigation-bar title="YiseBook" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view type="list" style='height: {{windowHeight}}px' scroll-y="true">
+  <view class="container">
+    <image src="{{cover}}" class="cover" bindtap="chooseImage"></image>
+    <text>卡册名</text>
+    <input bindinput="inputName"/>
+    <text>卡册描述</text>
+    <textarea bindinput="inputinfo"></textarea>
+    <button bindtap="createAlbum">创建</button>
+  </view> 
+</scroll-view>

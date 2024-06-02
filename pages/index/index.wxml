@@ -1,0 +1,21 @@
+<navigation-bar title="YiseBook" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view type="list" style='height: {{windowHeight}}px' scroll-y="true">
+  <view class="container">  
+    <view wx:if="{{albums.length === 0}}" class="no-albums-message">  
+      <text class="nothing">还没有卡册，去创建👇</text>  
+    </view>  
+    <view wx:else class="album-list">  
+      <view class="album-row" wx:for="{{albums}}" wx:key="id" wx:for-item="item" wx:for-index="index" wx:if="{{index % 2 === 0}}">
+        <view class="album" data-id="{{item.id}}" bindtap="goToAlbum">
+          <image src="{{item.cover}}" class="cover"></image>
+          <text class="name">{{item.name}}</text>
+        </view>
+        <view wx:if="{{albums[index + 1]}}" class="album" data-id="{{albums[index + 1].id}}" bindtap="goToAlbum">
+          <image src="{{albums[index + 1].cover}}" class="cover"></image>
+          <text class="name">{{albums[index + 1].name}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="fab" bindtap="goToNewAlbum">+</view>   
+  </view>
+</scroll-view>

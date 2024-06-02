@@ -1,0 +1,45 @@
+.container {
+  padding: 20px;
+  margin-bottom: 25%;
+}
+
+.cover {
+  width: 50%;
+  padding-top: 75%;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+text {
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input {
+  padding-top: 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #C0D825;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.delete {
+  background-color: #ff6347;
+}
